@@ -1,8 +1,8 @@
 /**
 * @preserve
-* https://github.com/GregBee2/xassist-dom#readme Version 1.0.1.
+* https://github.com/GregBee2/xassist-dom#readme Version 1.0.2.
 *  Copyright 2018 undefined.
-*  Created on Tue, 20 Mar 2018 15:07:45 GMT.
+*  Created on Tue, 20 Mar 2018 15:12:38 GMT.
 */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
