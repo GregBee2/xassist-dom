@@ -1,5 +1,16 @@
-'use strict'
-export default function(e){
+/**
+* @preserve
+* https://github.com/GregBee2/xassist-dom#readme Version 0.0.1.
+*  Copyright 2018 undefined.
+*  Created on Tue, 20 Mar 2018 15:01:33 GMT.
+*/
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+	typeof define === 'function' && define.amd ? define(['exports'], factory) :
+	(factory((global.xa = global.xa || {})));
+}(this, (function (exports) { 'use strict';
+
+function dom(e){
 return new XaDOMelement(e);
 }
 function XaDOMelement(e){
@@ -60,7 +71,7 @@ XaDOMelement.prototype={
 			return this.e.getBoundingClientRect();
 		}
 		hiddenParents=this.parents();
-		for(i=1,len=hiddenParents.length;i<len;i++){
+		for(i=1, len=hiddenParents.length;i<len;i++){
 		//hiddenParents.forEach(function(el) {
 			
 			
@@ -91,5 +102,8 @@ XaDOMelement.prototype={
 	}
 };
 
+exports.dom = dom;
 
+Object.defineProperty(exports, '__esModule', { value: true });
 
+})));
