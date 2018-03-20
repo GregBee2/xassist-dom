@@ -1,6 +1,6 @@
 {
   "name": "@xassist/xassist-dom",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Basic helperfunctions for DOM-elements",
   "keywords": [
     "classoperations",
