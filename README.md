@@ -58,7 +58,7 @@ dom(elm).addClass(className::String)
 `dom().addClass()` takes 1 parameters:
 - **className** [`String`]:the name of the class we are looking for
 #### Result for dom().addClass()
-this method returns the original `XaDOMElement`, so it can be used for currying
+this method returns the original `XaDOMElement`, so it can be used for method-chaining
 ### dom().removeClass()
 
 removes a classname from the current element
@@ -69,7 +69,7 @@ dom(elm).removeClass(className::String)
 `dom().removeClass()` takes 1 parameters:
 - **className** [`String`]:the name of the class we are looking for
 #### Result for dom().removeClass()
-this method returns the original `XaDOMElement`, so it can be used for currying
+this method returns the original `XaDOMElement`, so it can be used for method-chaining
 ### dom().hasClass()
 
 checks if the element has a specified classname
@@ -91,7 +91,7 @@ dom(elm).replaceClass(className::String,newClassName::String)
 `dom().replaceClass()` takes 1 parameters:
 - **className** [`String`]:the name of the class we are looking for
 #### Result for dom().replaceClass()
-this method returns the original `XaDOMElement`, so it can be used for currying
+this method returns the original `XaDOMElement`, so it can be used for method-chaining
 ### dom().toggleClass()
 
 toggle the specified classname
@@ -103,7 +103,7 @@ dom(elm).toggleClass(className::String [,toggle::Boolean])
 - **className** [`String`]:the name of the class we are looking for
 - *toggle* [`Boolean`,defaults to: `!this.hasClass(className)`]:a boolean indicating if we should add(true) or remove (false) the `className`
 #### Result for dom().toggleClass()
-this method returns the original `XaDOMElement`, so it can be used for currying
+this method returns the original `XaDOMElement`, so it can be used for method-chaining
 ### dom().attr()
 
 sets an attribute to a certain value
@@ -115,7 +115,7 @@ dom(elm).attr(attrName::String,value)
 - **attrName** [*any datatype*]:the name of the attribute we want to set
 - **value** [*any datatype*]:the value of the attribute we need.
 #### Result for dom().attr()
-this method returns the original `XaDOMElement`, so it can be used for currying
+this method returns the original `XaDOMElement`, so it can be used for method-chaining
 ### dom().parents()
 
 returns all parents of specified element
