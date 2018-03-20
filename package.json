@@ -1,0 +1,43 @@
+{
+  "name": "@xassist/xassist-dom",
+  "version": "0.0.1",
+  "description": "Basic helperfunctions for DOM-elements",
+  "keywords": [
+    "classoperations",
+    "getDimensions",
+    "DOM"
+  ],
+  "bugs": {
+    "email": "gregory.beirens@gmail.com"
+  },
+  "license": "GPL-3.0",
+  "author": "Gregory Beirens <gregory.beirens@gmail.com>",
+  "main": "dist/xAssist-dom.js",
+  "module": "index",
+  "scripts": {
+    "pretest": "rimraf dist  && rollup -c",
+    "test": "istanbul cover node_modules/tape/bin/tape test/**/*-test.js && eslint index.js src",
+    "posttest": "npm run uglify",
+    "build": "npm run test && git commit -am ",
+    "prepublishOnly": "npm version patch && npm run build  -- \"publish latest version\"",
+    "postpublish": "git push && git push --tags",
+    "readme": "node csv2readme.config.js",
+    "uglify": "uglifyjs  --comments /^@preserve/ dist/xAssist-dom.js -c -m -o dist/xAssist-dom.min.js"
+  },
+  "devDependencies": {
+    "csv2readme": "^1.0.1",
+    "jsdom": "^11.6.2",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.56.3",
+    "tape": "^4.9.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregBee2/xassist-dom.git"
+  },
+  "homepage": "https://github.com/GregBee2/xassist-dom#readme",
+  "directories": {
+    "test": "test"
+  }
+}
